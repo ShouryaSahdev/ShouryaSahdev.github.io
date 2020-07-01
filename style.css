@@ -1,9 +1,29 @@
+::-webkit-scrollbar 
+{
+	width: 10px; 
+}
+
+::-webkit-scrollbar-track 
+{
+	background: #64dfdf17; 
+}
+
+::-webkit-scrollbar-thumb 
+{
+	background: #72efdd; 
+	border-radius: 1px;
+}
+
+::selection
+{
+	background: #56cfe1;
+	color: #FFF; 
+}
+
 body,html
 {
 	margin: 0px;
 	font-family: 'Abel', sans-serif;
-	background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,242,246,1) 100%);
 }
 p
 {
@@ -18,7 +38,59 @@ p
 	margin: auto; 
 	text-align: center;
 }
+/*top*/
+.top
+{
+	height: 700px;
+		background-image: url('img/bg.png');
+	background-color: rgb(100,223,223);
+	background-color: radial-gradient(circle, rgba(100,223,223,1) 0%, rgba(86,207,225,1) 100%);
 
+	background-size: cover;
+}
+.top .left
+{
+	float: left;
+	width: 50%;
+	height: 400px;
+	margin-top: 150px;
+	background: #7400b80f;
+	text-align: center;
+}
+.top .right
+{
+	float: right;
+	width: 50%;
+	height: 400px;
+	margin-top: 150px;
+	background: #7400b80f;
+	text-align: center;
+}
+.top h1
+{
+	font-size: 160px;
+	color: #ffffff26;
+	font-weight: 400;
+	letter-spacing: 10px;
+	font-family: 'Six Caps', sans-serif;
+	margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 100px;
+}
+.top img
+{
+   width: 50%;
+    position: relative;
+    top: -200px;
+}
+.top iframe
+{
+	width: 700px;
+	height: 450px;
+	position: relative;
+	top: -45px;
+	border: 20px solid #01162714;
+}
 /*about*/
 
 .about .container
@@ -30,12 +102,16 @@ p
 .about  h1
 {
 	font-size: 30px;
+	background: #72efdd1f;
+	text-align: left;
+    padding-left: 30px;
 }
 .about p
 {
 	text-align: justify;
 	padding-bottom: 10px;
-	font-size: 20px;
+	font-size: 17px;
+	line-height: 25px;
 	font-family: roboto;
 	font-weight: 300;
 }
@@ -43,20 +119,40 @@ p
 
 .survey
 {
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	text-align: center;
-	font-family: 'Quicksand', sans-serif;
+	background-color: #72efdd1f;
+}
+.survey  h2
+{
+	font-size: 30px;
+	margin-block-start: 0px;
+    margin-block-end: 5px;
+    text-align: left;
+    padding-left: 30px;
+}
+.survey .para
+{
+	text-align: justify;
+	padding-bottom: 10px;
+	font-size: 17px;
+	line-height: 25px;
+	font-family: roboto;
+	font-weight: 300;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .survey .container
 {
-	background: #caf0f8;
 	padding-top: 100px;
 	padding-bottom: 250px;
-	width: 90%;
+	width: 70%;
 }
 .report
 {
-	width: 700px;
+	width:100%;
 	margin: auto;
 	background: #ffffff;
 	padding-bottom: 10px;
@@ -74,11 +170,11 @@ p
 }
 .percentl p
 {
-	font-size: 40px;
+	font-size: 35px;
 	float: left;
 	letter-spacing: 0px;
-	padding-left: 20px;
-	font-family: 'Bebas Neue', cursive;
+	padding-left: 15px;
+	/*font-family: 'Bebas Neue', cursive;*/
 	color: #2f3640;
 }
 .bar
@@ -99,8 +195,8 @@ p
 	background: #2bcbba;
 	display: inline-block;
 	float: left;
-	background: rgb(83,144,217);
-	background: linear-gradient(90deg, rgba(83,144,217,1) 0%, rgba(86,207,225,1) 44%, rgba(100,223,223,1) 100%);
+	background: rgb(114,239,221);
+	background: linear-gradient(90deg, rgba(114,239,221,1) 0%, rgba(128,255,219,1) 100%);
 }
 .report #one
 {
@@ -134,7 +230,9 @@ p
 }
 .percentr p
 {
-	font-size: 14px;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 10px;
 }
 .results
 {
@@ -180,20 +278,28 @@ p
 	border-radius: 25px;
 	z-index: 1000;
 	box-shadow: 0px 0px 50px #5390d980;
-	background: rgb(114,239,221);
-	background: radial-gradient(circle, rgba(114,239,221,1) 0%, rgba(72,191,227,1) 100%);
+	background-color: rgb(100,223,223);
+	background-color: radial-gradient(circle, rgba(100,223,223,1) 0%, rgba(86,207,225,1) 100%);
+}
+.stats h1
+{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0px;
+	color: #fff;
 }
 .stats  .container
 {
-	padding: 50px; 
-	width: 100%;
+	margin: auto;
+	padding-top: 50px;
+	width: 80%;
 }
 .stats .box
 {
 	width: 150px;
 	height: 200px;
 	border-radius:20px;
-	background: #ffffff36;
+	background: #6feaea52;
 }
 
 /*collaborations*/
@@ -203,6 +309,24 @@ p
 	/*border-top: 2px dashed #fff; */
 	
 	font-weight: 600;
+}
+.collab  h1
+{
+	font-size: 30px;
+	background: #72efdd1f;
+	text-align: left;
+    padding-left: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.collab .para
+{
+	text-align: justify;
+	padding-bottom: 10px;
+	font-size: 17px;
+	line-height: 25px;
+	font-family: roboto;
+	font-weight: 300;
 }
 .collab .container
 {
@@ -221,12 +345,12 @@ p
 	background: #ffffff;
 	display: inline-block;
 	border-radius: 25px;
-	box-shadow: 0px 10px 50px #4ea8de1c;
+	box-shadow: 0px 10px 50px #4ea8de3d;
 	/*border-bottom: 4px solid #48bfe3;*/
 }
 .imgcollab
 {
-	background: url('imgcollab.jpeg');
+	background: url('img/imgcollab.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -30px;
@@ -278,4 +402,11 @@ p
 	letter-spacing: 4px;
 	color: #fff;
 	box-shadow: 0px 2px 0px #48bfe3;
+	transition: .5s ease;
+}
+a:hover
+{
+	background: #91e5ff40;
+	color: #05668d;
+	box-shadow: 0px 2px 0px #05668d;
 }
